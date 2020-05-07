@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image /> 
     </div>
-    <Link to="/page-2/">Go to page 2 Hello</Link>
+    <Link to="/page-2/">Go to page 2</Link>
     {/* <img src="{data.contentfulGatsby.image}" /> */}
     <p>{data.contentfulGatsby.description.description}</p>
   </Layout>

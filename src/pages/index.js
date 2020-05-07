@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
       <Image /> 
     </div>
     <Link to="/page-2/">Go to page 2</Link>
-    <img src={data.contentfulGatsby.image.resolutions.src} />
+    <img src={data.contentfulGatsby.image.resolutions.src} alt="image"/>
     <p>{data.contentfulGatsby.description.description}</p>
   </Layout>
 )

@@ -19,7 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `PWA`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -27,13 +27,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
      {
        resolve: `gatsby-source-contentful`,
        options: {
          spaceId: `29vyl5irq15z`,
          accessToken: `4KUMbCx8f9Yk00JCiT60PUqoL-9N91Ds5ijZ75io0qo`,
        }
-     },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
       <Image /> 
     </div>
     <Link to="/page-2/">Go to page 2</Link>
-    {/* <img src="{data.contentfulGatsby.image}" /> */}
+    <img src={data.contentfulGatsby.image.resolutions.src} />
     <p>{data.contentfulGatsby.description.description}</p>
   </Layout>
 )
@@ -31,6 +31,12 @@ query PageQuery {
         id
         description
       }
-    }
+      image {
+        id
+        resolutions(width: 200, height: 200, resizingBehavior: THUMB) {
+          src
+        }
       }
+    }
+  }
 `

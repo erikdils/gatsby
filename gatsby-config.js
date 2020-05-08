@@ -33,6 +33,7 @@ module.exports = {
        options: {
          spaceId: `29vyl5irq15z`,
          accessToken: `4KUMbCx8f9Yk00JCiT60PUqoL-9N91Ds5ijZ75io0qo`,
+         host: `https://admiring-minsky-23ac0c.netlify.app`,
        }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
